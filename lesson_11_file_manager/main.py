@@ -71,9 +71,11 @@ while True:
     elif choice == '10':
         play_bank()
     elif choice == '11':
-        pass
+        print(f'Текущий катлог: {os.getcwd()}')
+        link = input('Введите новый путь: ')
+        os.chdir(link)
+        print(f'Текущий катлог: {os.getcwd()}')
     elif choice == '12':
-        pass
         break
     else:
         print('Неверный пункт меню')
